@@ -1,14 +1,63 @@
+$font-secondary: "Josefin Sans", sans-serif;
+$font-primary: "Elms Sans", sans-serif;
 
-
-body, html {
+.main-body {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow: hidden;
-    font-family: Arial, sans-serif;
+    font-family: "Elms Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    letter-spacing: 0.5px;
 }
 
-h1 {color: black;}
+.second-body {
+  margin: 0;
+    padding: 0;
+    font-family: "Elms Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.content-header__cv {
+  color: whitesmoke;
+  font-size: 20px;
+  padding: 10px;
+  margin: 0;
+  font-weight: 200;
+  font-family: $font-primary;
+
+}
+
+.content-header__name1 {
+  color: whitesmoke;
+  padding: 10px 10px 10px 10px;
+  margin: 30px 0 0 0;
+  font-weight: 200;
+  font-family: $font-secondary;
+  font-size: 60px;
+  text-align:left;
+  padding-left: 8%;
+ 
+ 
+}
+
+
+
+.content-header__name2 {
+   color: whitesmoke;
+  padding: 10px 10px 10px 10px;
+  margin: 0 0 0 0;
+  font-weight: 200;
+  font-family: $font-secondary;
+  font-size: 120px;
+  text-align: center;
+  padding-left: 0;
+  
+}
 
  .background-video {
       position: fixed;
@@ -26,6 +75,191 @@ h1 {color: black;}
       position: relative;
       z-index: 1;
       text-align: center;
-      top: 100px;
+      top: 320px;
       transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 600px;
+      width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+
+
+      &__text {
+        padding-bottom: 50px;
+      }
+
+ }
+  
+ 
+
+  .content-header__link {
+    background-color:rgb(225, 187, 89);
+  
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 1px;
+    text-decoration: none;
+    letter-spacing: 0.7px;
+   
+
+    
+  }
+
+  //obsah zivotopisu
+
+  .lista {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: first baseline;
+    margin-bottom: 0;
+
+    &__name {
+      color: black;
+      font-family: $font-secondary;
+      font-weight: 200;
+      padding-left: 30px;
+      font-size: 50px;
+      margin-bottom: 5px;
     }
+
+    &__back {
+      padding-right: 30px;
+    
+    }
+
+    &__link {
+      color: black;
+      font-family: $font-secondary;
+      font-weight: 300;
+      text-decoration: none;
+      font-size: 20px;
+      background-image: url(/images/arrow-right-310628_640.png);
+      background-repeat: no-repeat;
+      background-size: 25px;
+      background-position: right;
+      padding-right: 30px;
+   
+    }
+
+  }
+
+  .menu {
+    background-color: #081d69;
+    margin: 0;
+    background-attachment: fixed;
+  
+
+  &__content {
+    margin: 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+
+  }
+
+  &__link-box {
+    padding: 0 25px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  }
+
+  //prvni grid
+
+  .mainbox {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 60px;
+    margin: 30px;
+    max-width: 1200px;
+  }
+
+  .contact {
+    display: flex;
+   align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+
+  &__infobox {
+    text-align: center;
+    line-height: 30px;
+  }
+
+  &__header {
+    padding: 20px;
+  }
+    
+  }
+
+  .photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+
+    &__box {
+   align-items: center;
+   justify-content: center;
+    }
+
+
+    &__img {
+      height: 400px;
+    }
+
+    &__img2 {
+      width: 1000px;
+    }
+
+    &__header {
+      color:  rgb(163, 135, 66);
+    }
+  }
+
+  //praxe
+  .praxe {
+    
+    
+    
+
+    
+  }
+
+  .table {
+      
+
+      &__row {
+      
+    }
+
+    &__box {
+        padding-bottom: 25px;
+      }
+    }
+
+  //paticka
+
+  .footer {
+    background-color: #081d69;
+
+    &__text {
+      margin: 0;
+      color: whitesmoke;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+
+
+
