@@ -38,7 +38,7 @@
   text-align: center;
   padding-right: 50%;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .content-header__name1 {
     font-size: 60px;
     padding-left: 8%;
@@ -53,11 +53,11 @@
   margin: 0 0 0 0;
   font-weight: 200;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
   padding-left: 0;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .content-header__name2 {
     font-size: 120px;
   }
@@ -85,7 +85,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 300px;
+  height: 200px;
   width: 350px;
   margin-left: auto;
   margin-right: auto;
@@ -93,7 +93,7 @@
 .content-header__text {
   padding-bottom: 50px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .content-header {
     height: 600px;
     width: 700px;
@@ -123,9 +123,15 @@
   color: black;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 200;
-  padding-left: 30px;
-  font-size: 50px;
+  padding-left: 10px;
+  font-size: 25px;
   margin-bottom: 5px;
+}
+@media screen and (min-width: 800px) {
+  .lista__name {
+    font-size: 50px;
+    padding-left: 30px;
+  }
 }
 .lista__back {
   padding-right: 30px;
@@ -140,25 +146,43 @@
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: right;
-  padding-right: 30px;
+  padding-right: 28px;
+}
+@media screen and (min-width: 800px) {
+  .lista__link {
+    padding-right: 30px;
+  }
 }
 
 .menu {
   background-color: #081d69;
   margin: 0;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 .menu__content {
   margin: 0;
+  padding: 0;
   height: 50px;
   display: flex;
   justify-content: center;
   text-decoration: none;
   list-style: none;
   align-items: center;
+  font-size: 14px;
+}
+@media screen and (min-width: 800px) {
+  .menu__content {
+    font-size: 20px;
+  }
 }
 .menu__link-box {
-  padding: 0 25px;
+  padding: 0 10px;
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  .menu__link-box {
+    padding: 0 25px;
+  }
 }
 .menu__link {
   text-decoration: none;
@@ -217,7 +241,7 @@
   height: 400px;
 }
 .photo__img2 {
-  width: 400px;
+  width: 300px;
 }
 @media screen and (min-width: 600px) {
   .photo__img2 {
