@@ -31,7 +31,7 @@ $font-primary: "Elms Sans", sans-serif;
 
 .content-header__cv {
   color: whitesmoke;
-  font-size: 20px;
+  font-size: 30px;
   padding: 10px;
   margin: 0;
   font-weight: 200;
@@ -122,17 +122,31 @@ $font-primary: "Elms Sans", sans-serif;
   
     color: black;
     font-weight: 400;
-    font-size: 20px;
-    padding: 5px 15px;
-    border-radius: 1px;
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 5px;
     text-decoration: none;
     letter-spacing: 0.7px;
+
+    
+     @media screen and (min-width: 800px) {
+      font-size: 26px;
+     }
    
 
     
   }
 
   //obsah zivotopisu
+
+  .second-body {
+
+     @media screen and (min-width: 800px) {
+      font-size: 20px;
+      line-height: 1.2;
+     }
+    
+  }
 
   .lista {
     display: flex;
@@ -157,7 +171,7 @@ $font-primary: "Elms Sans", sans-serif;
 
     &__back {
   
-    padding-right: 30px;
+    padding-right: 10px;
     
     }
 
@@ -166,16 +180,19 @@ $font-primary: "Elms Sans", sans-serif;
       font-family: $font-secondary;
       font-weight: 500;
       text-decoration: none;
-      font-size: 15px;
-      padding-left: 10px;
-      //background-image: url(images/arrow-right-310628_640.png);
-      //background-repeat: no-repeat;
-      //background-size: px;
-      //background-position: right;
-      //padding-right: 28px;
+      font-size: 16px;
+      padding-left: 15px;
+      background-image: url(/images/arrow-right-310628_640.png);
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position: right;
+      padding-right: 25px;
 
        @media screen and (min-width: 800px) {
-       // padding-right: 30px;
+         font-size: 22px;
+          background-size: 50px;
+                padding-right: 60px;
+                 background-position: right;
        }
    
     }
